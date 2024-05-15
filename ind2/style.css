@@ -1,0 +1,93 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+table {
+    width: 80%;
+    max-width: 600px;
+    margin: 20px 0;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+.positive {
+    background-color: lightgreen;
+}
+
+.negative {
+    background-color: lightcoral;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    max-width: 300px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+input, select, button {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+input:hover, select:hover {
+    border-color: #999;
+}
+
+.mainButton {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.mainButton:hover {
+    background-color: #0056b3;
+}
+
+#detailedDescription, #totalAmount {
+    width: 80%;
+    max-width: 600px;
+    margin: 10px 0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: #fff;
+}
+
+#detailedDescription {
+    background-color: #f0f0f0;
+}
+
+#totalAmount {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+}

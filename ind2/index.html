@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Игровой учет</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Игровой учет</h1>
+
+<form id="transactionForm">
+    <input type="datetime-local" id="date" placeholder="Дата и время" required>
+    <input type="text" id="amount" placeholder="Сумма" required>
+    <input type="text" id="description" placeholder="Описание" required>
+    <select id="category">
+        <optgroup label="Расходы">
+            <option value="Purchase">Покупка игры</option>
+            <option value="DLC">Дополнения (DLC)</option>
+            <option value="Subscription">Подписка</option>
+            <option value="In-game">Покупка внутриигрового контента</option>
+        </optgroup>
+        <optgroup label="Доходы">
+            <option value="Sale">Продажа игры</option>
+            <option value="Refund">Возврат средств</option>
+            <option value="Gift">Подарок</option>
+        </optgroup>
+    </select>
+    <button class="mainButton" type="submit">Добавить транзакцию</button>
+</form>
+
+<table id="transactionTable">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Дата и Время</th>
+        <th>Категория</th>
+        <th>Описание</th>
+        <th>Действие</th>
+    </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+
+<div id="totalAmount">Итого: 0</div>
+<div id="detailedDescription"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
